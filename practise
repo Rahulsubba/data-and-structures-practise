@@ -1,0 +1,47 @@
+class node{
+    constructor (data, next){
+        this.data = data
+        this.next = next
+    }
+}
+class Linkedlist{
+    constructor(head){
+        this.head = null;
+    }
+    push(data){
+        
+        if(this.head == null) return this.head = new node(data)
+        let current = this.head;
+        while(current.next){
+            current = current.next
+        }
+         current.next = new node(data);
+        }
+        print(){
+            let current = this.head;
+            while(current){
+                console.log(current.data)
+                current= current.next;
+            }
+        }insertfirst(data){
+           const B = new node(data, this.head)
+            this.head = B
+        }
+        insertlast(data){
+            let current = this.head;
+            while(current.next){
+                current = current.next
+            }
+            current.next = new node (data)
+        }
+}
+
+let list = new Linkedlist()
+list.push(8)
+list.push(9)
+list.push(2)
+list.print()
+list.insertfirst(10)
+list.insertlast(20)
+console.log(list.head)
+ 
