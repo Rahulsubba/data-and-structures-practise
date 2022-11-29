@@ -44,4 +44,7 @@ list.print()
 list.insertfirst(10)
 list.insertlast(20)
 console.log(list.head);
+
+
+console.log('hello world')
  
