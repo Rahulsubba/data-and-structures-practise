@@ -1,4 +1,4 @@
-class node{
+/*class node{
     constructor (data, next){
         this.data = data
         this.next = next
@@ -43,8 +43,86 @@ list.push(2)
 list.print()
 list.insertfirst(10)
 list.insertlast(20)
-console.log(list.head);
+console.log(list.head);*/
 
 
-console.log('hello world')
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class node{
+    constructor(data, next){
+        this.data = data;
+        this.next = next;
+    }
+}
+class Linkedlist{
+    constructor(head){
+        this.head = null
+    }
+    push(data){
+        if(!this.head) return this.head = new node(data);
+        let current = this.head;
+        while(current.next){
+            current = current.next;
+        }
+        current.next = new node(data)
+    }
+    pop(data){
+        let current = this.head;
+        let secondhead = this.head;
+        while(current.next != null){
+            secondhead = current;
+            current    = current.next;
+        }
+        secondhead.next = null;
+        return this.head;
+    }
+    print(){
+        let current = this.head;
+        while(current){
+            console.log(current.data)
+            current = current.next
+        }
+    }
+    size(){
+        let node= this.head;
+        let count = 0;
+        while(node){
+            count++;
+            node = node.next;
+
+        }
+        return count;
+    }
+
+}
+
+
+let list = new Linkedlist()
+list.push(1)
+list.push(2)
+list.push(3)
+list.push(4)
+//list.pop()
+list.print()
+console.log("this size of the list is " + list.size())
+
+
+
+
+
+
+
