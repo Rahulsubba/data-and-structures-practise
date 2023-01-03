@@ -62,7 +62,7 @@ console.log(list.head);*/
 
 
 
-class node{
+/*class node{
     constructor(data, next){
         this.data = data;
         this.next = next;
@@ -118,10 +118,120 @@ list.push(3)
 list.push(4)
 //list.pop()
 list.print()
-console.log("this size of the list is " + list.size())
+console.log("this size of the list is " + list.size())*/
 
 
 
+
+
+
+
+
+
+
+
+/*class node{
+    constructor(data, next){
+        this.data = data;
+        this.next = next;
+     }
+}
+class Linkedlist{
+    constructor(head){
+        this.head = null;
+    }
+    push(data){
+        if(!this.head){
+          const A = new node(data)
+            this.head = A;
+            return this.head;
+        }
+        let current= this.head;
+        while(current.next){
+            current = current.next;
+        }
+        current.next= new node(data)
+    }
+    print(){
+        let current = this.head;
+        while(current){
+            console.log(current.data)
+            current  = current.next;
+        }
+    }
+    remove(){
+        let current = this.head;
+        let lastsecond = this.head;
+        while(current.next != null){
+            lastsecond = current;
+            current = current.next
+        }
+        lastsecond.next = null;
+    }
+
+}
+let list = new Linkedlist()
+list.push(6)
+list.push(7)
+list.push(8)
+list.remove()
+
+list.print()*/
+
+
+
+/*function append(num){
+    array.push(num)
+    console.log(array)
+}
+append(7)*/
+
+/*function remove(){
+    array.pop()
+    console.log(array)
+}
+remove()*/
+
+class Stack{
+    constructor(){
+        this.item = [];
+    }
+    push(data){
+        this.item.push(data)
+    }
+    pop(data){
+        if(!this.item){
+            return undefined;
+        }
+        this.item.pop(data)
+    }
+    peek(){
+      console.log(this.item[this.item.length -1])
+    }
+}
+
+let stack = new Stack();
+stack.push(1)
+stack.push(2)
+stack.push(3)
+stack.push(4)
+//stack.pop()
+stack.peek()
+//console.log(stack)
+
+/////////////////// This is class method//////////////////////////
+// class Car {
+//   constructor(color,name){
+//     this.color = color 
+//     this.name  = name
+//   }
+//   metod(){
+//     console.log(`hello ${this.color} ${this.name}`)
+//  }
+// }
+ 
+// let mack = new Car("black", "macho")
+// mack.metod()
 
 
 
