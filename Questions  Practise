@@ -1,0 +1,104 @@
+/*A left rotation operation on an array of size n shifts each of the array's elements 1 unit to the left. Given an integer, D , 
+rotate the array that many steps left and return the result.*/
+
+
+//rotation LEFT = 3 times//
+
+    
+
+//SOLUTION //
+// takes two parameter array and the  K times//
+//K times i needs to iterate for making the reverse i.e( if "K" is 5 and "I" is zero "I" needs to iterate to equal to "K" times //
+
+/*let array = [1, 2, 3, 4, 5, 6] 
+function koll(array, k){
+    for(i = 0; i < k; i++){
+        const back = array.pop()
+        array.unshift(back)
+    }
+    console.log(array)
+}
+koll(array, 2 )*/
+
+
+
+
+//REFERENCE FOR LOOP//
+/*class Students{
+    constructor(name, marks){
+        this.name = name;
+        this.marks = marks;
+    }
+}
+ let A  = new Students ( "Mercy", "37")
+ let B  = new Students("jack","48")
+ let C = new Students("Rancho","79")
+                                                                   
+function call(){
+    for(i= 0 ; i < 1; i ++){
+        console.log(A)
+        console.log(B)
+        console.log(C)
+    }
+}
+call ()*/
+
+
+
+
+     
+
+/*class record {
+
+     static all = []
+    constructor (name, marks){
+        this.name = namew
+        this.marks = marks
+        record.all.push(this);
+    }
+}
+ let re1 = new record("jack", "56")
+ let re2 = new record("haro", "66")
+ let re3 = new record("mer", "100")
+
+ console.log(record.all)*/
+
+
+/*let numbers = [1,2,3,4,5];
+//(numbers.length);
+console.log(numbers.reverse());*/
+
+// Two friends like to pool their money and go to the ice cream parlor.
+//  They always choose two distinct flavors and they spend all of their money.
+// Given a list of prices for the flavors of ice cream, select the two that will cost all of the money they have. Indice of 1
+
+// let's say the given price is 4
+// let cost2 = m - array.lenght 
+// ie. 4 - length of the array (first loop will minus the first interger)
+// ie. 4 - 1 = 3 so 3 is the second cost variabe declared
+
+
+//  Second loop will go through the array.length
+//  need to put a condition where [j] !== [i]  is not equal to and 
+//  and array.length is == to i which  returns true;
+
+
+
+// var array = [1, 2, 3, 4, 5]
+
+// function call(m, array){
+//    for(i = 0; i < array.length; i++){
+//           let secondcost =  m - array[i] // 3
+//           if(secondcost > 1 ) continue;
+
+//           for(j = 0; j < array.length; j++){
+//             if(j !==  i && array[j] == secondcost){
+//                 console.log([i+1], [j+1])
+//             }
+//           }
+//         }
+//     }
+
+//    call(4, array)
+
+
