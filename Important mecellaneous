@@ -1,0 +1,26 @@
+// CONVERTING A CLASS INTO FUNCTION
+
+
+// class CAR{
+//     constructor(model, name){
+//         this.model = model
+//         this.name  = name 
+//     }
+//     set(){
+//         console.log('this Car Model number is' +  this.model   + 'and the name is' +  this.name)
+//     }
+// }
+
+// let mack = new CAR('567', "Maaruti")
+// mack.set()
+
+// function CAR (model, name){
+//     this.model = model
+//     this.name  = name 
+// }
+//     CAR.prototype.set =  function(){
+//         console.log('this Car Model number is' +  this.model   + 'and the name is' +  this.name)
+//     } 
+    
+// let mack = new CAR("666", "maruti")
+// mack.set()

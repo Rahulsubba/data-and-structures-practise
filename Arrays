@@ -1,0 +1,138 @@
+//let numbers = [1,2,3,4,5];
+//(numbers.length);
+//console.log(numbers.reverse());
+
+// function calls (number){
+//    number = [1,2,3,4,5];
+//    let mum = numbers;
+//    console.log(mum.reverse())
+// }
+// calls();
+
+//function calls (number) {
+   // number = [1, 2, 3, 4, 5];
+   // if (number.length != 0) {
+   //     console.log(number.reverse());
+   // }
+//} 
+//calls();
+
+
+/*let array = [["fun", "boot", "shoot"],
+            ["carrot", "onion", "chilly"],
+            ["car" ,"radish", "wash"],
+            ["cream", "lotion", "suncream"]];
+
+
+ function call (){
+   
+   for (let i = 0; i < 1  ; ++i){
+      console.log("This is a" , array [1] [2] , "and it is  spicy" );
+   }
+}
+call()*/
+
+//MATRIX//
+
+/*let R = 4;
+let C = 4;
+function ray (arr){
+   if ( R < 2 ||  C < 2){
+      return none;
+   }
+   let max_sum = Number.MIN_VALUE;
+   for ( i = 0; i < R-2; i++){
+      for (j = 0; j< C - 2; j++){
+         let sum = (arr[i][j] + arr[i][j+1] + arr[i][j+2]) +  
+         (arr[i + 1][j+1])+ 
+         (arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2]);
+         
+         max_sum = Math.max(max_sum, sum)
+
+         
+
+      }
+   }
+   return max_sum;
+}
+let arr =    [[1, 0, 0, 0 , 1],
+            [1 , 0, 0, 0, 1],
+             [0, 1, 0, 0, 1],
+            [0 , 0, 2,  1, 1]];
+   let res = ray(arr);
+   console.log(res);*/ 
+
+
+
+
+
+/*let text = '5432';
+let go   = text.split('');
+let b    = parseInt(go)
+
+console.log(typeof text);
+console.log(typeof go)
+console.log(typeof b)
+console.log(typeof go)
+console.log(b)
+console.log(typeof b)*/
+
+
+//Double looop//
+/*for (i= 0; i < 10; i = i+ 2){
+   for(j = i; j < i+2; j++ ){
+    console.log(j )
+   }
+}*/
+
+ //MAP METHOD//
+/*{
+ var array = [1, 2, 3, 4, 5];
+ var array2 = array.map(element => element * 2) 
+ console.log(array2);//arrow function//
+ 
+}
+var array = [ 1 ,2 ,3 ,4];
+var array2 = array.map((element)=> {
+   return element + 2; //arrow function//
+   
+ 
+});
+console.log(array2)
+
+{//CALL BACK FUCNTION//
+var array   = [ 1 ,2 ,3 ,4];// this is a call back function//
+var array2  = array.push(10) 
+var array2  = array.map(addition)
+   
+function  addition  (array_element ){
+      return array_element + 5
+      
+   }
+
+
+console.log(array2);
+}
+
+var L = ["jack", "mack"];
+var A = L.push('cake');
+console.log(L)*/
+
+
+//ARRAY ROTATION MEHTOD//
+
+/*let array = [1 , 2, 3, 4, 5]; //Right side//
+for( i = 1 ; i < 5 ; i++){
+   array.push(array.shift())
+   console.log(array)//  Time complexity O(1) + O(n);
+}*/
+ 
+let array = [ 1 ,2 ,3 ,4, 5];//left side//
+for(i = 0 ; i < 2; i++){
+   array.unshift(array.pop())
+   console.log(array)
+   
+
+
+}
+   
