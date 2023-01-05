@@ -72,33 +72,22 @@ console.log(numbers.reverse());*/
 //  They always choose two distinct flavors and they spend all of their money.
 // Given a list of prices for the flavors of ice cream, select the two that will cost all of the money they have. Indice of 1
 
-// let's say the given price is 4
-// let cost2 = m - array.lenght 
-// ie. 4 - length of the array (first loop will minus the first interger)
-// ie. 4 - 1 = 3 so 3 is the second cost variabe declared
-
-
-//  Second loop will go through the array.length
-//  need to put a condition where [j] !== [i]  is not equal to and 
-//  and array.length is == to i which  returns true;
 
 
 
-// var array = [1, 2, 3, 4, 5]
 
-// function call(m, array){
-//    for(i = 0; i < array.length; i++){
-//           let secondcost =  m - array[i] // 3
-//           if(secondcost > 1 ) continue;
+function Calculate(Totalcost, flavors){
+   for(i = 0; i < flavors.length; i++){
+    let firstprice = flavors[i]
+    let secondprice = Totalcost - firstprice
 
-//           for(j = 0; j < array.length; j++){
-//             if(j !==  i && array[j] == secondcost){
-//                 console.log([i+1], [j+1])
-//             }
-//           }
-//         }
-//     }
-
-//    call(4, array)
-
-
+    for (j = 0; j < flavors.length; j++){
+        if(i !== j && flavors[j] === secondprice){
+            return [ i + 1, j + 1 ]
+        }
+    }
+   }
+}
+let flavors = [ 1, 2, 3, 4, 5]
+let cost= Calculate(6, flavors)
+console.log(cost)
