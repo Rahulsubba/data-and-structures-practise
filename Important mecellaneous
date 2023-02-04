@@ -24,3 +24,30 @@
     
 // let mack = new CAR("666", "maruti")
 // mack.set()
+
+//  "A variable is a container that holds value 
+// where as a value is an argument thats passed
+// when a function is called"
+
+
+
+
+/*class record {
+
+     static all = []
+    constructor (name, marks){
+        this.name = namew
+        this.marks = marks
+        record.all.push(this);
+    }
+}
+ let re1 = new record("jack", "56")
+ let re2 = new record("haro", "66")
+ let re3 = new record("mer", "100")
+
+ console.log(record.all)*/
+
+
+
+
+ 

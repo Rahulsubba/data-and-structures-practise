@@ -77,3 +77,7 @@
 // stack.peek()
 // console.log(stack)
 
+for(i=0; i<d; i++){
+    let front = arr.splice(4,1)
+   arr.unshift(front)
+}

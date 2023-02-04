@@ -127,12 +127,60 @@ for( i = 1 ; i < 5 ; i++){
    console.log(array)//  Time complexity O(1) + O(n);
 }*/
  
-let array = [ 1 ,2 ,3 ,4, 5];//left side//
-for(i = 0 ; i < 2; i++){
-   array.unshift(array.pop())
-   console.log(array)
+// let array = [ 1 ,2 ,3 ,4, 5];//left side//
+// for(i = 0 ; i < 2; i++){
+//    array.unshift(array.pop())
+//    console.log(array)
    
 
 
-}
+// }
    
+
+// MAP()
+
+// let array = [1  ,2 , 3, 4, 5]
+// let doct= array.map(function(){
+//    return array + 1
+// })
+// console.log(doct)
+
+
+
+// let mack = [ 1,2,3,4,5]
+// let jack = mack.map(function(element){
+//    return element + 5
+// })
+// console.log(jack)
+
+// let items = ['monkey', 'hello', 'snake']
+// let dog = items.map(function (items){
+//       return items
+// })
+// console.log(dog)
+
+
+// let numbers = [1, 2, 3, 4];
+// let double = numbers.map((x,i,arr) => x * 2 + i*3);
+// console.log(double); // [2, 5, 8, 11]
+
+
+//SPLICE()
+//   This method takes 3 arguments index, numbers of elements to be removed, 
+//   numbers of elements to be added in an array
+
+// let array = [1, 2, 3, 4, 5]
+// Adding an element at the front of the array
+// array.splice(0,0,6)
+// console.log(array)
+
+// Removing an element from the end of the array
+// array.splice(4,1)
+// console.log(array)
+
+// Removing and array from a  random index
+// array.splice(1,2)
+// console.log(array)
+
+
+
