@@ -14,13 +14,15 @@
 // let mack = new CAR('567', "Maaruti")
 // mack.set()
 
-// function CAR (model, name){
-//     this.model = model
-//     this.name  = name 
+// class CAR {
+//     constructor(model, name) {
+//         this.model = model
+//         this.name = name
+//     }
+//     set() {
+//         console.log('this Car Model number is' + " " + this.model +  " " + 'and the name is' + " "+ this.name)
+//     }
 // }
-//     CAR.prototype.set =  function(){
-//         console.log('this Car Model number is' +  this.model   + 'and the name is' +  this.name)
-//     } 
     
 // let mack = new CAR("666", "maruti")
 // mack.set()
@@ -32,11 +34,11 @@
 
 
 
-/*class record {
+class record {
 
      static all = []
     constructor (name, marks){
-        this.name = namew
+        this.name = name
         this.marks = marks
         record.all.push(this);
     }
@@ -45,7 +47,7 @@
  let re2 = new record("haro", "66")
  let re3 = new record("mer", "100")
 
- console.log(record.all)*/
+ console.log(record.all)
 
 
 

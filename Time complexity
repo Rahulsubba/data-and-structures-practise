@@ -1,74 +1,74 @@
-//EXAMPLE OF LINER TIME COMPLEXITY    O(n) //
+# //EXAMPLE OF LINER TIME COMPLEXITY    O(n) //
 
-/*array = [ 1, 2, 3, 4, 5]
-function loop(){
-    total = 0 
-    for (i = 0 ; i < array.length; i++ ){
-       total += array[i];
-}
-    console.log(total);
-}
-loop(array)
+# /*array = [ 1, 2, 3, 4, 5]
+# function loop(){
+#     total = 0 
+#     for (i = 0 ; i < array.length; i++ ){
+#        total += array[i];
+# }
+#     console.log(total);
+# }
+# loop(array)
 
-T =  O(1) + n * O(1) + O(1)
-T = c2 + n * c5 
-T = n * c5
-T = n
-T = O(n) times
+# T =  O(1) + n * O(1) + O(1)
+# T = c2 + n * c5 
+# T = n * c5
+# T = n
+# T = O(n) times
  
 
-let array = [1, 2, 3, 4, 5, 6]
-function jello(num){
-    sum = 0;
-    for(i = 0; i < num.length; i++){
-        sum+= num[i]
-    }
-    console.log(sum)
-}
-jello(array)
+# let array = [1, 2, 3, 4, 5, 6]
+# function jello(num){
+#     sum = 0;
+#     for(i = 0; i < num.length; i++){
+#         sum+= num[i]
+#     }
+#     console.log(sum)
+# }
+# jello(array)
 
-T = O(1) + O(1) + n * O(1) + O(1)
-T = O(1) + n * O(1)
-T = n * O(1)
-T = O(n)*/ // time complexity of this function is linear//*/
-
-
-
-
-//EXAMPLE OF CONSTANT TIME//
-
-/*function add (num, num){
-    console.log (num + num)
-}
-add(5, 5)
+# T = O(1) + O(1) + n * O(1) + O(1)
+# T = O(1) + n * O(1)
+# T = n * O(1)
+# T = O(n)*/ // time complexity of this function is linear//*/
 
 
 
-class Stack{
-    constructor(){
-        this.array = []
-    }
-    push(data){
-        this.array.push(data)
-    }
-    peek(){
-        console.log(this.array[this.array.length -1])
-    }
-    print(data){
-        console.log(this.array)
-    }
-}
 
-let list = new Stack()
-list.push(1)
-list.push(2)
-list.push(3)
-list.push(4)
-list.peek()
-list.print()
+# //EXAMPLE OF CONSTANT TIME//
 
-T = O(1) + O(1) + O(1) + O(1)
-T  = O(4) //Same as O(1)// */
+# /*function add (num, num){
+#     console.log (num + num)
+# }
+# add(5, 5)
+
+
+
+# class Stack{
+#     constructor(){
+#         this.array = []
+#     }
+#     push(data){
+#         this.array.push(data)
+#     }
+#     peek(){
+#         console.log(this.array[this.array.length -1])
+#     }
+#     print(data){
+#         console.log(this.array)
+#     }
+# }
+
+# let list = new Stack()
+# list.push(1)
+# list.push(2)
+# list.push(3)
+# list.push(4)
+# list.peek()
+# list.print()
+
+# T = O(1) + O(1) + O(1) + O(1)
+# T  = O(4) //Same as O(1)// */
 
 
 /*class node{// O(1)//

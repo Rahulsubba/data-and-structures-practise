@@ -212,3 +212,41 @@ function tree(n){
 }
 
 tree(4)
+
+// In this challenge, you are required to calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+
+// Function Description
+
+// Complete the aVeryBigSum function in the editor below. It must return the sum of all array elements.
+
+// aVeryBigSum has the following parameter(s):
+
+// int ar[n]: an array of integers .
+// Return
+
+// long: the sum of all array elements
+// Input Format
+
+// The first line of the input consists of an integer .
+// The next line contains  space-separated integers contained in the array.
+
+// Output Format
+
+// Return the integer sum of the elements in the array.
+
+
+
+function sum_big_number(arr){
+    let total = BigInt(0)
+    for(i = 0; i < arr.length; i++){
+        total += BigInt(arr[i])
+    }
+    return total
+}
+
+let mack = [50000,60000000,70000000,888888]
+let host = sum_big_number(mack)
+console.log(host.toString())
+
+
+

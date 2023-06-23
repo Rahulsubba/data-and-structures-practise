@@ -34,7 +34,7 @@ call()*/
 
 //MATRIX//
 
-/*let R = 4;
+let R = 4;
 let C = 4;
 function ray (arr){
    if ( R < 2 ||  C < 2){
@@ -60,7 +60,7 @@ let arr =    [[1, 0, 0, 0 , 1],
              [0, 1, 0, 0, 1],
             [0 , 0, 2,  1, 1]];
    let res = ray(arr);
-   console.log(res);*/ 
+   console.log(res);
 
 
 
